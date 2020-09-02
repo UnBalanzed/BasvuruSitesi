@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assents/css/bootstrap.min.css">
+  <title>İletişim Formu - Mustafa VURAL</title>
+</head>
+<body>
+  <div class="container">  
+    <div  class="col-md-6 table-bordered form-group"> 
+      <br>
+      <h3>A.A İletişim Formu</h3>
+      <hr>
+      <form action="mail/gonder.php" method="POST">
+        <div class="row">
+          <div class="col-md-6">
+            <label>İsim</label>
+            <input class="form-control" type="text" maxlength="25" name="isim" required="">
+          </div>
+          <div class="col-md-6">
+           <label>Soyisim</label>
+           <input class="form-control" maxlength="25" type="text" name="soyad" required=""> 
+         </div>
+       </div>  
+       <label>E-Mail</label>
+       <input class="form-control" type="email" name="email" required="">
+       <label>Telefon</label>
+       <input class="form-control" type="number" name="tel" required="">
+       <label>Doğum Tarihi</label>
+       <input class="form-control" type="date" name="dt" required="">
+       <label>Hizmetler</label>
+       <select name="hizmetler" class="form-control"> 
+         <option>Web tasarım</option>
+         <option>Html kodlama</option>
+         <option>Teknik servis</option>
+       </select>
+       <label>Bizi Nerden Buldunuz</label>
+       <div class="row">
+        <div class="col-md-4  custom-control custom-checkbox">
+          <input type="checkbox" name="google" value="Google" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1">Google</label>
+        </div>
+        <div class="col-md-4 custom-control custom-checkbox">
+          <input type="checkbox"   name="face" value="Facebook" class="custom-control-input" id="customCheck2">
+          <label class="custom-control-label"  for="customCheck2">Facebook</label>
+        </div>
+        <div class="col-md-4 custom-control custom-checkbox">
+          <input type="checkbox" name="diger" value="Diğer" class="custom-control-input" id="customCheck3">
+          <label class="custom-control-label" for="customCheck3">Diğer</label>
+        </div>
+      </div>
+      <label>Açıklama</label>
+      <textarea class="form-control" name="aciklama" maxlength="500" type="text"> </textarea>
+      <br>  
+      <button class="btn btn-success"  name="gonder" type="submit">Gönder</button>
+      <button class="btn btn-danger" name="temizle" type="reset">Temizle</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
